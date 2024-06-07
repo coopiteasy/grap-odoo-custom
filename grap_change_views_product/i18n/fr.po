@@ -736,5 +736,5 @@ msgstr "🌱 Infos réglementaires bio - labels"
 #. module: grap_change_views_product
 #: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
 msgid "🍴 Alimentary and production informations 🚩"
-msgstr "🍴 Infos alimentaires et de production 🚩"
+msgstr "🍴 Infos alimentaires et de fabrication 🚩"
 
