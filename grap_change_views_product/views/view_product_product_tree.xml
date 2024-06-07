@@ -146,7 +146,6 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                 <field name="country_id"/>
                 <field name="state_id"/>
                 <field name="department_id"/>
-                <field name="origin_description"/>
                 <field name="maker_description"/>
                 <field name="company_id" groups="base.group_multi_company" readonly="1"/>
             </tree>
