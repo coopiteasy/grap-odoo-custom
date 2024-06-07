@@ -294,7 +294,6 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                                     <field name="country_id"/>
                                     <field name="state_id"/>
                                     <field name="department_id"/>
-                                    <field name="pricetag_origin"/>
                                     <br/>
                                 </group>
                                 <group string="🍴 Alimentary and production informations 🚩">
