@@ -730,11 +730,11 @@ msgstr "⇒ Augmenter le prix"
 
 #. module: grap_change_views_product
 #: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
-msgid "🌱 Organic informations - Labels"
-msgstr "🌱 Infos réglementaires bio - labels"
+msgid "Labels and legal informations"
+msgstr "Labels et informations règlementaires"
 
 #. module: grap_change_views_product
 #: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
-msgid "🍴 Alimentary and production informations 🚩"
-msgstr "🍴 Infos alimentaires et de fabrication 🚩"
+msgid "Alimentary informations"
+msgstr "Informations alimentaires"
 
