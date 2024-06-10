@@ -109,7 +109,6 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                 <field name="categ_id"/>
                 <field name="label_ids" widget="many2many_tags"/>
                 <field name="is_alimentary"/>
-                <field name="certifier_organization_id"/>
                 <field name="allergen_ids" widget="many2many_tags" groups="mrp.group_mrp_user"/>
                 <field name="product_seasonality_ids" widget="many2many_tags" groups="mrp.group_mrp_user"/>
                 <field name="is_alcohol"/>
@@ -144,11 +143,9 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                 <field name="default_code" readonly="1"/>
                 <button name="see_current_product" type="object" string="↗️"/>
                 <field name="name" readonly="1"/>
-                <field name="country_group_id"/>
                 <field name="country_id"/>
                 <field name="state_id"/>
                 <field name="department_id"/>
-                <field name="origin_description"/>
                 <field name="maker_description"/>
                 <field name="company_id" groups="base.group_multi_company" readonly="1"/>
             </tree>
@@ -156,7 +153,7 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
     </record>
 
     <record id="action_product_product_origin" model="ir.actions.act_window">
-        <field name="name">Products (Ingredients origin)</field>
+        <field name="name">Products (Place of Manufacture)</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">product.product</field>
         <field name="view_type">form</field>
@@ -165,7 +162,7 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
     </record>
 
    <menuitem id="menu_product_product_origin"
-        name="Products (Ingredients origin)"
+        name="Products (Place of Manufacture)"
         action="action_product_product_origin"
         parent="menu_product_product_editable_view" sequence="3"/>
 

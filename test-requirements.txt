@@ -11,8 +11,8 @@ git+https://github.com/OCA/social@refs/pull/1238/head#subdirectory=setup/mail_te
 git+https://github.com/OCA/manufacture@refs/pull/798/head#subdirectory=setup/mrp_bom_widget_section_and_note_one2many
 
 # Coop It Easy Dependencies
-git+https://github.com/coopiteasy/addons@12.0#subdirectory=setup/account_customer_wallet
-git+https://github.com/coopiteasy/addons@12.0#subdirectory=setup/pos_customer_wallet
+git+https://github.com/legalsylvain/coopiteasy-addons@12.0-TMP-fix-bad-design-demo-data#subdirectory=setup/account_customer_wallet
+git+https://github.com/legalsylvain/coopiteasy-addons@12.0-TMP-fix-bad-design-demo-data#subdirectory=setup/pos_customer_wallet
 
 # GRAP Dependencies
 git+https://github.com/grap/grap-odoo-incubator@12.0#subdirectory=setup/name_search_reset_res_partner
@@ -36,10 +36,10 @@ git+https://github.com/grap/grap-odoo-business@12.0#subdirectory=setup/recurring
 git+https://github.com/grap/grap-odoo-business@12.0#subdirectory=setup/product_to_scale_bizerba
 git+https://github.com/grap/grap-odoo-business@12.0#subdirectory=setup/sale_eshop
 git+https://github.com/grap/grap-odoo-business@12.0#subdirectory=setup/product_food
+git+https://github.com/grap/grap-odoo-business@12.0#subdirectory=setup/product_food_certification
 git+https://github.com/grap/grap-odoo-business@12.0#subdirectory=setup/product_label
 git+https://github.com/grap/grap-odoo-business@12.0#subdirectory=setup/product_origin
-git+https://github.com/grap/grap-odoo-business@12.0#subdirectory=setup/product_origin_l10n_fr_department
-git+https://github.com/grap/grap-odoo-business@12.0#subdirectory=setup/product_notation
+git+https://github.com/grap/grap-odoo-business@12.0#subdirectory=setup/l10n_fr_department_product_origin
 
 git+https://github.com/grap/odoo-addons-logistics@12.0#subdirectory=setup/joint_buying_base
 git+https://github.com/grap/odoo-addons-logistics@12.0#subdirectory=setup/joint_buying_product
