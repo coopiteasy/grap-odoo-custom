@@ -34,23 +34,6 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
               </div>
               <!-- / grap custom -->
 
-              <!-- mrp_food : Main image and seasonality-->
-              <span attrs="{'invisible': [('product_id', '=', False)]}">
-                <p class="alert alert-warning" role="alert" groups="mrp_food.seasonality_manager" attrs="{'invisible': ['|', ('is_bom_seasonal', '=', True), '&amp;', ('is_bom_seasonal', '=', False), ('are_bom_lines_seasonals', '=', False)]}">
-                  ⚠️ This Bill Of Materials is not in season (according to seasonality bom field).
-                </p>
-                <p class="alert alert-warning" role="alert" groups="mrp_food.seasonality_manager" attrs="{'invisible': ['|', ('are_bom_lines_seasonals', '=', True), '&amp;', ('is_bom_seasonal', '=', False), ('are_bom_lines_seasonals', '=', False)]}">
-                  ⚠️ Some composants are not in season:
-                  <b><field name="products_not_in_season" readonly="1"/></b>
-                </p>
-                <p class="alert alert-warning" role="alert" groups="mrp_food.seasonality_manager" attrs="{'invisible': ['|', ('is_bom_seasonal', '=', True), ('are_bom_lines_seasonals', '=', True)]}">
-                  ⚠️ This Bill Of Materials is not in season, and neither are these components:
-                  <b><field name="products_not_in_season" readonly="1"/></b>
-                </p>
-              </span>
-              <!-- / mrp_food -->
-
-
               <group>
                   <group string="Main informations">
                       <field name="product_tmpl_id" context="{'default_type': 'product'}" groups="base.group_no_one"/>
@@ -157,9 +140,6 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                   </group>
                   <group string="Food informations">
                     <!-- mrp_food -->
-                    <field name="bom_season_ids" string="Seasonality" groups="mrp_food.seasonality_manager" widget="many2many_tags" options="{'color_field': 'color', 'no_quick_create': True}"/>
-                    <field name="is_bom_seasonal" groups="base.group_no_one"/>
-                    <field name="are_bom_lines_seasonals" groups="base.group_no_one"/>
                     <field name="bom_label_ids" widget="many2many_tags"/>
                     <field name="bom_allergen_ids" widget="many2many_tags"/>
                     <!-- / mrp_food -->
@@ -192,8 +172,6 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                               <!-- mrp_food -->
                               <field name="label_ids" widget="many2many_tags"/>
                               <field name="allergen_ids" widget="many2many_tags"/>
-                              <field name="seasonality_ids" groups="mrp_food.seasonality_manager" widget="many2many_tags" options="{'color_field': 'color', 'no_quick_create': True}"/>
-                              <field name="is_seasonal" groups="base.group_no_one"/>
                               <!-- / mrp_food -->
                               <!-- mrp_bom_sale_product_margin -->
                               <field name="standard_price_unit" widget="monetary" options="{'currency_field': 'currency_id', 'field_digits': True}"/>
@@ -237,8 +215,6 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                               <field name="currency_id" invisible="1"/>
                               <field name="label_ids" widget="many2many_tags" string="Labels"/>
                               <field name="allergen_ids" widget="many2many_tags" string="Allergens"/>
-                              <field name="seasonality_ids" groups="mrp_food.seasonality_manager" string="Seasonalities" widget="many2many_tags" options="{'color_field': 'color', 'no_quick_create': True}"/>
-                              <field name="is_seasonal" groups="base.group_no_one"/>
                               <field name="standard_price_unit" string="Standard price unit" widget="monetary" options="{'currency_field': 'currency_id', 'field_digits': True}"/>
                               <field name="standard_price_subtotal" string="ST" readonly="1" sum="Total" widget="monetary" options="{'currency_field': 'currency_id', 'field_digits': True}" />
                               <field name="standard_price_subtotal_percentage" string="ST %" widget="percentage" options="{'field_digits': True}"/>
@@ -310,7 +286,6 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                 <field name="product_margin_rate_percentage"
                        widget="percentage" string="Product&#160;Margin&#160;Rate" options="{'bg_color': '#e74c3c: product_margin_rate_percentage &lt; 0'}"/>
                 <!-- mrp_food -->
-                <field name="bom_season_ids" groups="mrp_food.seasonality_manager" widget="many2many_tags" options="{'color_field': 'color'}"/>
                 <field name="bom_label_ids" widget="many2many_tags"/>
                 <field name="bom_allergen_ids" widget="many2many_tags"/>
                 <field name="active" widget="boolean_toggle"/>
@@ -340,7 +315,6 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                 <button name="set_product_standard_price" icon="fa-arrow-right" type="object" attrs="{'invisible': [('diff_product_bom_standard_price', '=', 0)]}" help="It will set product variant's standard price with this price"/>
                 <field name="product_standard_price" string="Product&#160;Standard&#160;Price" widget="monetary" options="{'currency_field': 'currency_id', 'field_digits': True}"/>
                 <!-- mrp_food -->
-                <field name="bom_season_ids" groups="mrp_food.seasonality_manager" widget="many2many_tags" options="{'color_field': 'color'}"/>
                 <field name="bom_label_ids" widget="many2many_tags"/>
                 <field name="bom_allergen_ids" widget="many2many_tags"/>
                 <field name="active" widget="boolean_toggle"/>
