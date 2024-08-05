@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#   * grap_change_views_product
+#	* grap_change_views_product
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-09 22:18+0000\n"
-"PO-Revision-Date: 2024-01-09 22:18+0000\n"
+"POT-Creation-Date: 2024-07-23 14:11+0000\n"
+"PO-Revision-Date: 2024-07-23 14:11+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -44,6 +44,11 @@ msgstr "Dispo dans le PdV"
 #: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_supplierinfo_tree
 msgid "Actual Price"
 msgstr "Prix actuel"
+
+#. module: grap_change_views_product
+#: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
+msgid "Alimentary informations"
+msgstr "Informations alimentaires"
 
 #. module: grap_change_views_product
 #: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_tree_mrp
@@ -96,11 +101,6 @@ msgstr "Coût TTC"
 #: model:ir.model.fields,help:grap_change_views_product.field_product_product__standard_price
 msgid "Cost used for stock valuation in standard price and as a first price to set in average/fifo. Also used as a base price for pricelists. Expressed in the default unit of measure of the product."
 msgstr "Également utilisé comme prix de base pour les listes. Exprimé dans l'unité de mesure par défaut du produit."
-
-#. module: grap_change_views_product
-#: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
-msgid "Create an automatic trigram. Change its BoM references with this trigram."
-msgstr "Générer un trigramme automatiquement. Cela change les codes références des fiches techniques du produit."
 
 #. module: grap_change_views_product
 #: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
@@ -237,13 +237,13 @@ msgstr "Référence interne"
 
 #. module: grap_change_views_product
 #: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
-msgid "Inventory"
-msgstr "Inventaire"
+msgid "Joint Buying"
+msgstr "Commande groupée"
 
 #. module: grap_change_views_product
 #: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
-msgid "Joint Buying"
-msgstr "Commande groupée"
+msgid "Labels and legal informations"
+msgstr "Labels et informations règlementaires"
 
 #. module: grap_change_views_product
 #: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_tree_mrp
@@ -263,7 +263,7 @@ msgstr "Frs principal·e"
 #. module: grap_change_views_product
 #: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
 msgid "Manual Deletion in the Scale System"
-msgstr "Suppression manuel dans le système de balance"
+msgstr "Suppression manuelle sur le système de balance"
 
 #. module: grap_change_views_product
 #: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_tree
@@ -326,7 +326,7 @@ msgstr "Lieu de fabrication"
 #. module: grap_change_views_product
 #: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
 msgid "Point of Sale"
-msgstr "Point de Vente"
+msgstr "Point de vente"
 
 #. module: grap_change_views_product
 #: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
@@ -348,6 +348,11 @@ msgstr "Prix brut UdM Frs"
 #: model:ir.model.fields,help:grap_change_views_product.field_product_template__list_price
 msgid "Price at which the product is sold to customers."
 msgstr "Prix auquel l'article est vendu aux clients."
+
+#. module: grap_change_views_product
+#: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
+msgid "Price per unit"
+msgstr "Prix unitaire"
 
 #. module: grap_change_views_product
 #: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
@@ -409,14 +414,12 @@ msgstr "Articles"
 #. module: grap_change_views_product
 #: model:ir.actions.act_window,name:grap_change_views_product.action_product_product_alcohol
 #: model:ir.ui.menu,name:grap_change_views_product.menu_product_product_alcohol
-#: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_tree_alcohol
 msgid "Products (Alcohol)"
 msgstr "Articles (Alcool)"
 
 #. module: grap_change_views_product
 #: model:ir.actions.act_window,name:grap_change_views_product.action_product_product_category
 #: model:ir.ui.menu,name:grap_change_views_product.menu_product_product_category
-#: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_tree_category
 msgid "Products (Categories)"
 msgstr "Articles (Catégories)"
 
@@ -447,7 +450,6 @@ msgstr "Articles (PdV)"
 #. module: grap_change_views_product
 #: model:ir.actions.act_window,name:grap_change_views_product.action_product_product_pricetag
 #: model:ir.ui.menu,name:grap_change_views_product.menu_product_product_pricetag
-#: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_tree_pricetag
 msgid "Products (Price Tags)"
 msgstr "Articles (Étiquettes)"
 
@@ -710,6 +712,11 @@ msgstr "Fournisseurs"
 
 #. module: grap_change_views_product
 #: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
+msgid "Volume or Weight"
+msgstr "Volume ou Poids"
+
+#. module: grap_change_views_product
+#: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
 msgid "eShop"
 msgstr "eBoutique"
 
@@ -720,21 +727,5 @@ msgstr "⇒ Baisser le prix"
 
 #. module: grap_change_views_product
 #: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
-msgid "⇒ Generate new trigram"
-msgstr "⇒ Générer trigramme"
-
-#. module: grap_change_views_product
-#: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
 msgid "⇒ Increase Price"
 msgstr "⇒ Augmenter le prix"
-
-#. module: grap_change_views_product
-#: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
-msgid "Labels and legal informations"
-msgstr "Labels et informations règlementaires"
-
-#. module: grap_change_views_product
-#: model_terms:ir.ui.view,arch_db:grap_change_views_product.view_product_product_form
-msgid "Alimentary informations"
-msgstr "Informations alimentaires"
-
