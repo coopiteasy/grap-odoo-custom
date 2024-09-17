@@ -296,6 +296,8 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                                     <field name="meal_category_id" groups="mrp.group_mrp_user"/>
                                     <field name="is_vegan"/>
                                     <field name="is_alcohol" attrs="{'invisible': [('is_alimentary', '=', False)]}"/>
+                                    <field name="storage_method"/>
+                                    <field name="use_by_date_day" attrs="{'invisible': [('is_alimentary', '=', False)]}"/>
                                     <field name="best_before_date_day" attrs="{'invisible': [('is_alimentary', '=', False)]}"/>
                                 </group>
                                 <group string="Ingredients">
