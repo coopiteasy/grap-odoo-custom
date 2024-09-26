@@ -23,6 +23,12 @@ Changes access to certains models
 
 -> full access on ``product.supplierinfo``.
 
+* **CRM / User: Own Documents** (``crm.crm_security_group``)
+
+-> full access on ``crm.stage``.
+-> full access on ``crm.tag``.
+-> full access on ``crm.lost.reason``.
+
 
 New Groups
 ----------

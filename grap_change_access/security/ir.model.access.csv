@@ -20,3 +20,6 @@ sale_order_template_option manager,sale_order_template_option manager,sale_manag
 sale_order user,sale_order user,sale.model_sale_order,sales_team.group_sale_salesman,1,1,1,1
 access_mrp_bom_user,Grap MRP User,mrp.model_mrp_bom,mrp.group_mrp_user,1,1,1,1
 access_mrp_bom_line_user,Grap MRP User,mrp.model_mrp_bom_line,mrp.group_mrp_user,1,1,1,1
+access_crm_stage_own_leads,crm.stage.all.leads,crm.model_crm_stage,crm_security_group.group_crm_own_leads,1,1,1,1
+access_crm_tags_own_leads,crm.tags.all.leads,crm.model_crm_lead_tag,crm_security_group.group_crm_own_leads,1,1,1,1
+access_crm_lost_reason_own_leads,crm.lost.reason.all.leads,crm.model_crm_lost_reason,crm_security_group.group_crm_own_leads,1,1,1,1
