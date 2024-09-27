@@ -29,6 +29,12 @@ Changes access to certains models
 -> full access on ``crm.tag``.
 -> full access on ``crm.lost.reason``.
 
+* **Project / User** (``project``)
+
+-> full access on ``project.project``.
+-> full access on ``project.task.type``.
+-> full access on ``project.tags``.
+
 
 New Groups
 ----------
