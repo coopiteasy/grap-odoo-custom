@@ -21,6 +21,8 @@ from . import product_category
 from . import product_pricelist
 from . import product_template
 from . import product_template_attribute_value
+from . import project_project
+from . import project_task_type
 from . import res_company
 from . import res_config_settings
 from . import res_country_group
