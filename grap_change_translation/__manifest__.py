@@ -4,8 +4,8 @@
 
 {
     "name": "GRAP - Change translation",
-    "summary": "Disable the translation mechanism for a many" " fields",
-    "version": "12.0.1.2.1",
+    "summary": "Disable the translation mechanism for a many fields",
+    "version": "12.0.2.0.0",
     "category": "GRAP - Custom",
     "author": "GRAP",
     "website": "https://github.com/grap/grap-odoo-custom",
