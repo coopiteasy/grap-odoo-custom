@@ -21,7 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[grap_change_access](grap_change_access/) | 12.0.1.0.18 |  | Add new groups for specific models and change accesses for a number of models.
+[grap_change_access](grap_change_access/) | 12.0.1.1.0 |  | Add new groups for specific models and change accesses for a number of models.
 [grap_change_base_product_mass_addition](grap_change_base_product_mass_addition/) | 12.0.0.1.4 |  | Fix slow call to odoo.tests.Form, used in base_product_mass_addition, for purchase_quick module
 [grap_change_data](grap_change_data/) | 12.0.1.0.9 |  | GRAP - Change Data
 [grap_change_default](grap_change_default/) | 12.0.1.1.4 |  | GRAP - Change Default
@@ -33,6 +33,7 @@ addon | version | maintainers | summary
 [grap_change_views_account](grap_change_views_account/) | 12.0.1.1.15 |  | GRAP - Change Views Account
 [grap_change_views_base](grap_change_views_base/) | 12.0.0.1.5 |  | GRAP - Change Base Views
 [grap_change_views_calendar](grap_change_views_calendar/) | 12.0.1.0.3 |  | GRAP - Change Calendar Views
+[grap_change_views_crm](grap_change_views_crm/) | 12.0.1.1.0 |  | GRAP - Change CRM Views
 [grap_change_views_mail](grap_change_views_mail/) | 12.0.1.1.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | GRAP - Change Mail Views
 [grap_change_views_mrp](grap_change_views_mrp/) | 12.0.1.3.2 |  | GRAP - Change Views MRP
 [grap_change_views_partner](grap_change_views_partner/) | 12.0.0.0.20 |  | GRAP - Change Partner Views
