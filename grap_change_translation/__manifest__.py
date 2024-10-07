@@ -13,6 +13,7 @@
     "depends": [
         "account",
         "base",
+        "crm",
         "calendar",
         "delivery",
         "mail",
