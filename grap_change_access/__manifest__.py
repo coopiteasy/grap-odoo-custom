@@ -17,9 +17,11 @@
         "point_of_sale",
         "purchase",
         "pos_restaurant",
+        "project",
         # OCA
         "attachment_delete_restrict",
         "product_margin_classification",
+        "crm_security_group",
         # GRAP
         "product_print_category_food_report",
     ],
